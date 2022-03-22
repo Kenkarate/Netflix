@@ -1,16 +1,22 @@
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import "./App.css"
+import {action,comedy,horror,originals, romance} from './urls'
 import Banner from "./Components/Banner/Banner";
 import RowPost from "./Components/RowPost/RowPost";
+
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Banner/>
-      <RowPost title="Netflix Originals" />
-      <RowPost title="Action" isSmall/>
+      <RowPost url={originals} title="Netflix Originals" />
+      <RowPost url={action} title="Action" isSmall/>
+      <RowPost url={romance} title="Romance" isSmall/>
+      <RowPost url={horror} title="Horror" isSmall/>
+      <RowPost url={comedy} title="Comedy" isSmall/>
+      
     </div>
     
   );

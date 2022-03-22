@@ -20,7 +20,7 @@ function Banner() {
     <div style={{backgroundImage:`url(${movie ? imageUrl+ movie.backdrop_path:""})`}} className='banner'>
       
         <div className="content">
-          <h1>React app created by Ajesh</h1>
+          
             <h1 className="title">{movie ? movie.title:""}</h1>
             <div className="banner-buttons">
                 <button className="button">Play</button>
